@@ -257,9 +257,9 @@ namespace LossyBotRewrite
             {
                 image[i].ColorFuzz = (Percentage)20;
                 image[i].Settings.FillColor = MagickColors.Yellow;
-                image[i].Opaque(MagickColors.Yellow, MagickColors.White);
+                image[i].Opaque(MagickColors.White, MagickColors.Yellow);
                 image[i].Settings.FillColor = MagickColors.Blue;
-                image[i].Opaque(MagickColors.Yellow, MagickColors.Black);
+                image[i].Opaque(MagickColors.Black, MagickColors.Yellow);
                 image[i].Modulate((Percentage)100, (Percentage)300, (Percentage)i_the_prequel);
                 if (i_the_prequel + step > 200)
                     i_the_prequel -= 200;
